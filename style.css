@@ -113,10 +113,13 @@ button {
     border-style: double;
   }
 
-.result {
+#result {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: fantasy;
+    font-weight: 600;
+    font-size: 26px;
 }
 
 footer {
