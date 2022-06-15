@@ -54,7 +54,7 @@ div {
   font-weight: 600;
   font-size: 40px;
 }
-input {
+button {
   font-size: 70px;
   width: 160px;
   height: 160px;
@@ -62,7 +62,7 @@ input {
   background-color: var(--secondary-dark);
 }
 
-.buttons {
+.button-cont {
   display: flex;
   gap: 40px;
 }
@@ -93,7 +93,7 @@ input {
   font-size: 32px;
   text-align: center;
 }
-.playerScore {
+#playerScore {
   text-align: center;
   padding-top: 8px;
   margin-top: 12px;
@@ -102,6 +102,16 @@ input {
   font-size: 32px;
   border-style: double;
 }
+
+#computerScore {
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 12px;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 32px;
+    border-style: double;
+  }
 
 .result {
   display: flex;
