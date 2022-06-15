@@ -1,106 +1,114 @@
 :root {
-  --primary-beige: #eeeeee;
-  --primary-dark: #000000;
-  --secondary-dark: #f24c4c;
-  --header: #f15412;
-  --primary-yellow: #fac650;
+    --primary-beige: #eeeeee;
+    --primary-dark: #000000;
+    --secondary-dark: #f24c4c;
+    --header: #f15412;
+    --primary-yellow: #fac650;
 }
 
 body {
-  background: #000000; /* Chrome 10-25, Safari 5.1-6 */
-  height: 100vh;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+    background: #000000;
+    /* Chrome 10-25, Safari 5.1-6 */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 div {
-  color: var(--primary-beige);
+    color: var(--primary-beige);
 }
 
 /*header*/
 .header {
-  box-shadow: 2px 4px 16px rgba(233, 233, 233, 0.2);
+    box-shadow: 2px 4px 16px rgba(233, 233, 233, 0.2);
 }
-.title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 70px;
 
-  color: var(--primary-yellow);
-  font-family: fantasy;
-  font-weight: 900;
-  height: 110px;
-  margin-top: 12px;
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+
+    color: var(--primary-yellow);
+    font-family: fantasy;
+    font-weight: 900;
+    height: 110px;
+    margin-top: 12px;
 }
 
 .underhead {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .movemaker {
-  margin-top: 32px;
+    margin-top: 32px;
 }
+
 .makeurmove {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family: fantasy;
-  font-weight: 600;
-  font-size: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 40px;
 }
+
 button {
-  font-size: 70px;
-  width: 160px;
-  height: 160px;
-  border-radius: 50px;
-  background-color: var(--secondary-dark);
+    font-size: 70px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50px;
+    background-color: var(--secondary-dark);
 }
 
 .button-cont {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 .scoreboard {
-  margin-top: 20px;
+    margin-top: 20px;
 }
+
 .result {
-  font-family: fantasy;
-  font-weight: 600;
-  font-size: 32px;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 32px;
 }
+
 .obj-carriers {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
 }
+
 .You {
-  margin: 20px;
-  width: 180px;
-  height: auto;
+    margin: 20px;
+    width: 180px;
+    height: auto;
 }
 
 .playername {
-  font-family: fantasy;
-  font-weight: 600;
-  font-size: 32px;
-  text-align: center;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
 }
+
 #playerScore {
-  text-align: center;
-  padding-top: 8px;
-  margin-top: 12px;
-  font-family: fantasy;
-  font-weight: 600;
-  font-size: 32px;
-  border-style: double;
+    text-align: center;
+    padding-top: 8px;
+    margin-top: 12px;
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 32px;
+    border-style: double;
 }
 
 #computerScore {
@@ -111,30 +119,43 @@ button {
     font-weight: 600;
     font-size: 32px;
     border-style: double;
-  }
+}
 
 #result {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: fantasy;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: fantasy;
     font-weight: 600;
     font-size: 26px;
 }
 
+#reloadb {
+    font-family: fantasy;
+    font-weight: 600;
+    font-size: 30px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border: 0;
+}
+
 footer {
-  box-shadow: 0 -4px 6px rgba(206, 204, 204, 0.2);
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  margin: 0%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    box-shadow: 0 -4px 6px rgba(206, 204, 204, 0.2);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    margin: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
-  color: rgb(196, 32, 32);
-  text-decoration: none;
+    color: rgb(196, 32, 32);
+    text-decoration: none;
 }

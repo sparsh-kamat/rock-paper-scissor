@@ -1,50 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Rock Paper Scissors</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="index.js" defer></script>
-  </head>
 
-  
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js" defer></script>
+</head>
 
-    <header class="header">
-      <div class="title">Rock Paper Scissor</div>
-    </header>
 
-    <div class="underhead">
-      <div class="movemaker">
-        <div class="makeurmove">Make Your Move</div>
-        <div class="button-cont">
-          <button id="rock">✊</button>
-          <button id="paper">🖐</button>
-          <button id="scissors">✌️</butt>
+<body>
+
+  <header class="header">
+    <div class="title">Rock Paper Scissor</div>
+  </header>
+
+  <div class="underhead">
+    <div class="movemaker">
+      <div class="makeurmove">Make Your Move</div>
+      <div class="button-cont">
+        <button id="rock">✊</button>
+        <button id="paper">🖐</button>
+        <button id="scissors">✌️</butt>
+      </div>
+    </div>
+
+    <div class="scoreboard">
+
+      <div class="obj-carriers">
+        <div class="You">
+          <div class="playername">You</div>
+          <div id="playerScore">0</div>
+        </div>
+        <div class="You">
+          <div class="playername">Computer</div>
+          <div id="computerScore">0</div>
         </div>
       </div>
+      <div id="result">First To ‎ 5 ‎ Points, Wins.</div>
+    </div>
+    <button id="reloadb" class="btn" style="display:none;">Reload</button>
+  </div>
 
-      <div class="scoreboard">
-        
-        <div class="obj-carriers">
-          <div class="You">
-            <div class="playername">You</div> 
-            <div id="playerScore">0</div>
-          </div>
-          <div class="You">
-            <div class="playername">Computer</div> 
-            <div id="computerScore">0</div>
-          </div>
-        </div>
-        <div id="result">First To ‎ 5 ‎ Points, Wins.</div>
-      </div>
+  <footer style="color:#eeeeee; ">
+    Made by ‎<a href="https://github.com/sparsh-kamat"> Mercuray</a>
+  </footer>
+</body>
 
-    </div>   
-
-    <footer style="color:#eeeeee; ">
-      Made by ‎<a href="https://github.com/sparsh-kamat"> Mercuray</a>
-    </footer>
-  </body>
 </html>
