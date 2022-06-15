@@ -1,0 +1,3 @@
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/s5L8Vtj/paper.png" alt="paper" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/jhkqHM9/rock.png" alt="rock" border="0"></a>
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/hcVYnCz/scissor.png" alt="scissor" border="0"></a>

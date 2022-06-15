@@ -1,0 +1,39 @@
+:root {
+  --primary-orange: #eeeeee;
+  --primary-dark: #000000;
+  --secondary-dark: #f24c4c;
+  --header: #f15412;
+  --primary-yellow: #fac650;
+}
+
+body {
+  background: #000000; /* Chrome 10-25, Safari 5.1-6 */
+  height: 100%;
+  margin: 0;
+}
+
+div {
+  color: var(--primary-orange);
+}
+
+/*header*/
+.header {
+  box-shadow: 2px 4px 16px rgba(233, 233, 233, 0.2);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  color: var(--primary-yellow);
+  font-family: "Press Start 2P", cursive;
+  font-weight: 900;
+  height:  70px;
+  margin: 0;
+}
+
+.underhead {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
