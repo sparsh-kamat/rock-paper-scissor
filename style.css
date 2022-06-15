@@ -1,5 +1,5 @@
 :root {
-  --primary-orange: #eeeeee;
+  --primary-beige: #eeeeee;
   --primary-dark: #000000;
   --secondary-dark: #f24c4c;
   --header: #f15412;
@@ -8,12 +8,14 @@
 
 body {
   background: #000000; /* Chrome 10-25, Safari 5.1-6 */
-  height: 100%;
+  height: 100vh;
   margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 div {
-  color: var(--primary-orange);
+  color: var(--primary-beige);
 }
 
 /*header*/
@@ -24,16 +26,102 @@ div {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 40px;
+  font-size: 70px;
+
   color: var(--primary-yellow);
-  font-family: "Press Start 2P", cursive;
+  font-family: fantasy;
   font-weight: 900;
-  height:  70px;
-  margin: 0;
+  height: 110px;
+  margin-top: 12px;
 }
 
 .underhead {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.movemaker {
+  margin-top: 32px;
+}
+.makeurmove {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: fantasy;
+  font-weight: 600;
+  font-size: 40px;
+}
+input {
+  font-size: 70px;
+  width: 160px;
+  height: 160px;
+  border-radius: 50px;
+  background-color: var(--secondary-dark);
+}
+
+.buttons {
+  display: flex;
+  gap: 40px;
+}
+
+.scoreboard {
+  margin-top: 20px;
+}
+.result {
+  font-family: fantasy;
+  font-weight: 600;
+  font-size: 32px;
+}
+.obj-carriers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.You {
+  margin: 20px;
+  width: 180px;
+  height: auto;
+}
+
+.playername {
+  font-family: fantasy;
+  font-weight: 600;
+  font-size: 32px;
+  text-align: center;
+}
+.playerScore {
+  text-align: center;
+  padding-top: 8px;
+  margin-top: 12px;
+  font-family: fantasy;
+  font-weight: 600;
+  font-size: 32px;
+  border-style: double;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  box-shadow: 0 -4px 6px rgba(206, 204, 204, 0.2);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  margin: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  color: rgb(196, 32, 32);
+  text-decoration: none;
 }
