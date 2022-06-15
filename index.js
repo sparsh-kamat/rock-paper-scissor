@@ -33,6 +33,7 @@ function compare(a, b) {
 let playerSelection = "";
 let playerEmoji = "";
 let computerEmoji = "";
+let winner = "";
 const buttons = document.querySelectorAll("button");
 const playerScorePara = document.getElementById("playerScore");
 const computerScorePara = document.getElementById("computerScore");
@@ -49,16 +50,37 @@ buttons.forEach((button) => {
 });
 
 function play(player) {
-  const computerSelection = getRandomChoice();
-  playerSelection = player;
-  let result = compare(player, computerSelection);
-  UpdateScore(result);
-  updateScoreMessage(result,playerEmoji,computerEmoji);
+  if (gameover()) {
+    document.getElementById("rock").disabled = true;
+    document.getElementById("paper").disabled = true;
+    document.getElementById("scissors").disabled = true;
+
+    if (winner === "player") {
+      resultMessage.textContent = "You Win! Reload to Play Again.";
+    }
+
+    if (winner === "computer") {
+      resultMessage.textContent = "You lose! Reload to Play Again.";
+    }
+  } else {
+    const computerSelection = getRandomChoice();
+    playerSelection = player;
+    let result = compare(player, computerSelection);
+    UpdateScore(result);
+    updateScoreMessage(result, playerEmoji, computerEmoji);
+  }
 }
 
 function gameover() {
-  if (ps == 5 || cs == 5) return 1;
-  else return 0;
+  if (ps == 5 || cs == 5) {
+    if (ps == 5) {
+      winner = "player";
+    }
+    if (cs == 5) {
+      winner = "computer";
+    }
+    return true;
+  } else return false;
 }
 
 function UpdateScore(result) {
@@ -72,7 +94,7 @@ function UpdateScore(result) {
 }
 
 function updateScoreMessage(result, playerEmoji, computerEmoji) {
-  if (result== 1) {
+  if (result == 1) {
     resultMessage.textContent = `${playerEmoji}  beats  ${computerEmoji}`;
     return;
   }
@@ -81,5 +103,5 @@ function updateScoreMessage(result, playerEmoji, computerEmoji) {
     return;
   }
 
-  resultMessage.textContent = `${ playerEmoji }  ties with  ${computerEmoji}`;
+  resultMessage.textContent = `${playerEmoji}  ties with  ${computerEmoji}`;
 }
