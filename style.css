@@ -7,158 +7,116 @@
 }
 
 body {
-    background: #000000;
+    background: var(--primary-dark);
     height: 100vh;
     margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-content: space-between;
-
 }
 
-div {
-    color: var(--primary-beige);
-}
-
-/*header*/
+/* Header */
 .header {
     display: flex;
     justify-content: center;
-    box-shadow: 2px 4px 16px rgba(233, 233, 233, 0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 450%;
+    font-size: 3rem;
     color: var(--primary-yellow);
-    font-family: fantasy;
-    font-weight: 900;
-    height: 110px;
+    font-family: sans-serif;
+    font-weight: 700;
     margin-top: 12px;
 }
 
-.underhead {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.movemaker {
-    margin-top: 32px;
-}
-
+/* Make Your Move Section */
 .makeurmove {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-family: fantasy;
+    font-family: sans-serif;
     font-weight: 600;
-    font-size: 40px;
+    font-size: 2rem;
 }
 
 button {
-    font-size: 70px;
+    font-size: 2.5rem;
     width: 160px;
     height: 160px;
-    border-radius: 50px;
+    border-radius: 50%;
     background-color: var(--secondary-dark);
 }
 
 .button-cont {
     display: flex;
-    gap: 40px;
+    gap: 2rem;
+    margin-top: 1rem;
 }
 
+/* Scoreboard Section */
 .scoreboard {
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 .result {
-    font-family: fantasy;
+    font-family: sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.5rem;
 }
 
 .obj-carriers {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 1rem;
 }
 
 .You {
-    margin: 20px;
     width: 180px;
     height: auto;
 }
 
 .playername {
-    font-family: fantasy;
+    font-family: sans-serif;
     font-weight: 600;
-    font-size: 32px;
+    font-size: 1.5rem;
     text-align: center;
 }
 
-#playerScore {
+#playerScore, #computerScore {
     text-align: center;
-    padding-top: 8px;
-    margin-top: 12px;
-    font-family: fantasy;
+    padding: 8px;
+    margin: 12px;
+    font-family: sans-serif;
     font-weight: 600;
-    font-size: 32px;
-    border-style: double;
-}
-
-#computerScore {
-    text-align: center;
-    padding-top: 8px;
-    margin-top: 12px;
-    font-family: fantasy;
-    font-weight: 600;
-    font-size: 32px;
-    border-style: double;
+    font-size: 1.5rem;
+    border: 2px double var(--primary-beige);
 }
 
 #result {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: fantasy;
+    font-family: sans-serif;
     font-weight: 600;
-    font-size: 26px;
+    font-size: 1.25rem;
 }
 
-#reloadb {
-    font-family: fantasy;
-    font-weight: 600;
-    font-size: 30px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    padding-top: 10px;
-    border: 0;
-}
-
+/* Footer */
 footer {
-    box-shadow: 0 -4px 6px rgba(206, 204, 204, 0.2);
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     height: 50px;
     flex-shrink: 0;
-    margin: 0%;
-    margin-top: 20px;
+    margin: 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 a {
-    color: rgb(196, 32, 32);
+    color: #c42020;
     text-decoration: none;
 }
